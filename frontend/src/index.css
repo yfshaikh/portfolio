@@ -1,0 +1,33 @@
+:root {
+  --background-color: rgb(19, 22, 27);
+  --button-color: #45a049;
+  --button-hover-color: #45a049;
+  --focus-border-color: #6495ed;
+  --text-color: white;
+  --theme: #6495ed;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Kanit", sans-serif;
+  background-color: var(--background-color);
+  color: white;
+  line-height: 1.6;
+}
+
+/* App styling */
+
+.app {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; Centers children horizontally */
+  justify-content: center; /* Centers children vertically */
+  width: 100%;
+  box-sizing: border-box; /* Ensures padding and border are included in width/height */
+}
+

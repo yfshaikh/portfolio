@@ -1,0 +1,57 @@
+ul {
+    list-style: none;
+  }
+  
+  
+header {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: #272b32;
+}
+
+
+nav ul {
+    margin: 0 1em;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    list-style-type: none;
+    font-size: 1.3rem;
+  }
+  
+  nav ul li {
+    margin: 0 1em;
+    font-size: 1rem;
+  }
+
+
+/* Nav button styling */
+
+.nav-btn {
+    background-color: transparent;
+    color: white;
+    padding: 7px 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .nav-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  nav {
+    display: flex;
+    align-content: flex-start;
+  }
+
+  .external-link-icon {
+    font-size: 0.8em; 
+    color: var(--theme);
+  }

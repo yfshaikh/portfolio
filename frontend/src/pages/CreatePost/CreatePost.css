@@ -1,0 +1,124 @@
+.create-post-page {
+    padding: 20px;
+    background-color: var(--background-color);
+    color: #fff;
+    border-radius: 10px;
+  }
+  
+  .post-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .post-title {
+    padding: 10px;
+    font-size: 1.2rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .post-title:focus {
+    outline: none;
+    border: 2px solid #6495ed; /* Soft blue border on focus */
+  }
+  
+  /* Updated image input styling */
+  .image-input-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  
+  .image-input-label {
+    padding: 10px 15px;
+    background-color: #4a90e2;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .image-input-label:hover {
+    background-color: #357ABD; /* Darker blue on hover */
+  }
+  
+  .image-input {
+    display: none; 
+  }
+  
+  .save-button {
+    padding: 10px;
+    background-color: var(--button-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .save-button:hover {
+    background-color: var(--button-hover-color); 
+  }
+  
+  .editor {
+    background-color: #282828;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .error {
+    color: red;
+  }
+
+  .post-type-dropdown {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .file-input-wrapper {
+    margin-bottom: 15px;
+  }
+  
+  .file-input-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  .file-input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+  }
+
+  .post-date {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #2e2e38;
+    background-color: #282c34;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    appearance: none; /* Removes default browser styles for date input */
+  }
+
+  .post-date:hover {
+    border-color: #FFD57D;
+  }
+  
+  .post-date:focus {
+    border-color: #FFD57D;
+    box-shadow: 0 0 5px rgba(255, 213, 125, 0.5);
+  }
+  
+  

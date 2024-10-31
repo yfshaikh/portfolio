@@ -1,0 +1,58 @@
+
+.signin-page {
+    background-color: rgb(24, 28, 34); /* Background color */
+    color: #fff; /* Text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+  }
+  
+  .signin-page h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .signin-page form {
+    display: flex;
+    flex-direction: column;
+    width: 300px; /* Width of the form */
+  }
+  
+  .signin-page input[type="text"],
+  .signin-page input[type="password"] {
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #333; /* Input background */
+    color: #fff; /* Input text color */
+    transition: background-color 0.3s; /* Transition for background color */
+  }
+  
+  .signin-page input[type="text"]:focus,
+  .signin-page input[type="password"]:focus {
+    background-color: #444; /* Change background on focus */
+    outline: none; /* Remove default outline */
+  }
+  
+  .signin-page button {
+    padding: 10px;
+    background-color: rgb(66, 139, 202); /* Button color */
+    border: none;
+    border-radius: 5px;
+    color: #fff; /* Button text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Transition for background color */
+  }
+  
+  .signin-page button:hover {
+    background-color: rgb(46, 112, 169); /* Darker button color on hover */
+  }
+  
+  .signin-page .error {
+    color: #ff4d4d; /* Error text color */
+    margin-top: 10px;
+    text-align: center;
+  }
+  
