@@ -93,7 +93,7 @@ function HomePage() {
         <h3>About Me</h3>
         <ul className="about-list">
           <li>📖 Honors Computer Science Student @ <strong>UT Dallas</strong></li>
-          <li>Passionate about <strong>Fullstack Development</strong> and <strong>AI</strong></li>
+          <li>💻 Passionate about <strong>Fullstack Development</strong> and <strong>AI</strong></li>
           <li>👀 Looking for internships</li>
         </ul>
       </div>
