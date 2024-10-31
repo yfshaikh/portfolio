@@ -3,6 +3,7 @@ import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getStorage } from 'firebase/storage';
 import { getFirestore } from 'firebase/firestore';
+import { getAuth } from "firebase/auth";
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -31,5 +32,15 @@ const storage = getStorage(app);
 
 // Get a reference to Firestore
 const db = getFirestore(app);
+
+/*
+const auth = getAuth();
+const user = auth.currentUser;
+
+if (!user) {
+  console.error("User not authenticated. Redirecting to login page...");
+  // Redirect to login or show an error message
+}
+*/
 
 export { storage, db };

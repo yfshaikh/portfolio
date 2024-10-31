@@ -3,6 +3,7 @@ import { storage, db } from '../firebase'; // Ensure both storage and db are imp
 import { ref, getDownloadURL, listAll } from 'firebase/storage';
 import { collection, getDocs } from 'firebase/firestore';
 
+
 // COMPONENTS
 import ProjectCard from '../components/ProjectCard/ProjectCard';
 import Navbar from '../components/Navbar/Navbar';
@@ -17,6 +18,7 @@ function HomePage() {
 
   const fetchProjects = async () => {
     try {
+
       // Fetch post titles and image names from Firestore
       const projectsCollection = collection(db, 'projects'); 
       const projectDocs = await getDocs(projectsCollection);

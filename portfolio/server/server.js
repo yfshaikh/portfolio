@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 4000;
 
 // Middleware
 app.use(bodyParser.json());
-app.use(session({
+app.use(session({ 
   secret: 'your_secret_key',
   resave: false,
   saveUninitialized: true,
@@ -17,7 +17,7 @@ app.use(session({
 }));
 app.use(cors({
     origin: ['https://www.yfshaikh.com', 'http://localhost:5173'],
-    credentials: true, // Allow cookies to be sent with requests
+    credentials: process.env.NODE_ENV === 'production', // Allow cookies to be sent with requests
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
 }));
