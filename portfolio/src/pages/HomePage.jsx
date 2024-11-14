@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { storage, db } from '../firebase'; // Ensure both storage and db are imported
 import { ref, getDownloadURL, listAll } from 'firebase/storage';
-import { collection, getDocs } from 'firebase/firestore';
+import { collection, getDocs, query, orderBy } from 'firebase/firestore';
 
 
 // COMPONENTS
@@ -20,11 +20,12 @@ function HomePage() {
     try {
 
       // Fetch post titles and image names from Firestore
-      const projectsCollection = collection(db, 'projects'); 
-      const projectDocs = await getDocs(projectsCollection);
+      const projectsCollection = collection(db, 'projects');
+      const projectsQuery = query(projectsCollection, orderBy('order', 'asc')); // Orders by 'order' in ascending order
+      const projectDocs = await getDocs(projectsQuery);
       const projectList = projectDocs.docs.map((doc) => ({
         ...doc.data(),
-        id: doc.id, // Include the document ID here
+        id: doc.id,
       }));
       console.log('Fetched projects from Firestore:', projectList); 
 
