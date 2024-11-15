@@ -9,3 +9,25 @@
     height: 1000px;
     border: 3px solid gray;
   }
+
+  /* Text responsiveness - adjusting font size and weight */
+.pdf-container h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+  color: #d0d0d0;
+  margin-bottom: 20px;
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
+  .pdf-container h2 {
+    font-size: 1.3rem;  /* Slightly smaller font for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .pdf-container h2 {
+    font-size: 1.1rem;  /* Smaller font for mobile devices */
+  }
+}

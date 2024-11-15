@@ -1,57 +1,105 @@
-ul {
-    list-style: none;
-  }
-  
-  
+/* Navbar styles */
 header {
-    height: 70px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 30px;
-    background-color: #272b32;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  background-color: #272b32;
+  position: relative;
+  padding: 0 1rem; /* Add padding to prevent content from touching edges */
 }
 
+nav {
+  width: 100%; /* Ensure nav takes full width */
+}
 
 nav ul {
-    margin: 0 1em;
-    padding: 0;
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    text-align: left;
-    list-style-type: none;
-    font-size: 1.3rem;
-  }
-  
-  nav ul li {
-    margin: 0 1em;
-    font-size: 1rem;
-  }
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  font-size: 1.3rem;
+  width: 100%; /* Ensure list takes full width */
+}
 
+nav ul li {
+  margin: 0 1em;
+  font-size: 1rem;
+}
 
 /* Nav button styling */
-
 .nav-btn {
-    background-color: transparent;
-    color: white;
-    padding: 7px 15px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 5px;
+  background-color: transparent;
+  color: white;
+  padding: 7px 15px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.nav-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.external-link-icon {
+  font-size: 0.8em; 
+  color: var(--theme);
+}
+
+/* Hamburger icon */
+.hamburger-icon {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+}
+
+/* Hide menu items by default on smaller screens */
+.navList {
+  display: flex;
+  align-items: center;
+  width: 100%; /* Ensure list items stretch across the navbar */
+}
+
+/* Show menu items when hamburger menu is opened */
+.showMenu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 70px; /* Position below the navbar */
+  left: 0;
+  background-color: #272b32;
+  z-index: 1000;
+  padding: 1rem 0; /* Add padding to avoid edge contact */
+}
+
+.showMenu li {
+  margin: 1em 0;
+}
+
+/* Media query for mobile */
+@media (max-width: 768px) {
+  nav ul {
+    display: none; /* Hide nav items by default */
   }
-  
-  .nav-btn:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-  }
-  
-  nav {
-    display: flex;
-    align-content: flex-start;
+  .navList {
+    display: none;
   }
 
-  .external-link-icon {
-    font-size: 0.8em; 
-    color: var(--theme);
+  .hamburger-icon {
+    display: block; /* Show hamburger icon */
   }
+
+  .showMenu {
+    display: block; /* Show menu when clicked */
+  }
+}
+
