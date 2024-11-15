@@ -8,14 +8,14 @@
 
 .pdf-doc {
   width: 100%;
-  height: 600px; /* Set a default height */
+  height: 1000px; /* Maintain large screen layout */
   border: 3px solid gray;
 }
 
 /* Media Queries for smaller screens */
 @media (max-width: 768px) {
   .pdf-doc {
-    height: 500px; /* Adjust the height for tablets */
+    height: 600px; /* Adjust the height for tablets */
   }
 }
 
