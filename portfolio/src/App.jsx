@@ -18,7 +18,6 @@ function App() {
           <Routes>
             <Route path = '/' element={<HomePage />} />
             {/* <Route path = '/create' element={<CreatePostPage />} /> */}
-            <Route path = '/create' element={<CreatePostPage />} />
             <Route path = '/resume' element={<ResumePage />} />
             <Route path = '/notes' element={<NotesPage />} />
             <Route path = '/notes/:id' element={<DisplayNote />} />
