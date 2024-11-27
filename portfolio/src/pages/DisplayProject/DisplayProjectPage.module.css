@@ -52,6 +52,10 @@
   margin-bottom: 8px;
 }
 
+.text-container p {
+  /* margin-bottom: 16px; */
+}
+
 .project-text {
   font-size: 1.2em;
   color: #d0d0d0;
